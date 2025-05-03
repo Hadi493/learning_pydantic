@@ -13,4 +13,4 @@ class Employee(BaseModel):
     id: int
     name: str = Field(..., min_length=3)
     department: Optional[str] = 'General'
-    salary: float = Field(..., ge='10000')
+    salary: float = Field(..., ge=10000)

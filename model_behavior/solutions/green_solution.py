@@ -17,5 +17,5 @@ class Booking(BaseModel):
 
     @computed_field
     @property
-    def total_amount(self):
+    def total_amount(self) -> float:
         return self.nights * self.rate_per_night
