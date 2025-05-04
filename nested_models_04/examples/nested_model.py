@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel # type: ignore
 from typing import List, Optional
 
 
@@ -17,7 +17,7 @@ class User(BaseModel):
 class Comments(BaseModel):
     id: int
     content: str
-    replies: Optional([List('Comments')])  # :: Forword Reference
+    replies: Optional[List['Comments']] = None  # :: Forward Reference
 
 
 Comments.model_rebuild()

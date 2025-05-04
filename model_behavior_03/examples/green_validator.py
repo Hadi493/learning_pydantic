@@ -2,7 +2,7 @@ from pydantic import BaseModel, field_validator, model_validator, computed_field
 
 
 class User(BaseModel):
-    usename: str
+    username: str  # Fixed typo in field name
 
     @field_validator('username')
     def username_legnth(cls, v):
@@ -15,10 +15,10 @@ class SignupData(BaseModel):
     password: str
     confirm_password: str
 
-    @model_validator(mode=after)
+    @model_validator(mode='after')  # Fixed by adding quotes around 'after'
     def password_match(cls, values):
-        if values.password_match != values.confirm_password:
-            raise ValueError("Password do not match")
+        if values.password != values.confirm_password:  # Fixed incorrect attribute reference
+            raise ValueError("Passwords do not match")  # Fixed typo in error message
         return values
 
 
