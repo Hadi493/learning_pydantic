@@ -5,4 +5,4 @@
 - Model behavior
 - Nested Model
 - Serialization
-- examples with fastapi
+- Examples with fastapi
