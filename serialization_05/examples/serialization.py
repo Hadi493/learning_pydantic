@@ -1,7 +1,6 @@
 from pydantic import BaseModel, ConfigDict # type: ignore
 from typing import List
 from datetime import datetime
-from logging import config
 
 
 class Address(BaseModel):
