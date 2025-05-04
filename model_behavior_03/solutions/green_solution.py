@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, computed_field
+from pydantic import BaseModel, Field, computed_field # type: ignore
 
 # TODO: Create Booking model
 # Fields:
