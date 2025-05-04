@@ -10,6 +10,7 @@ Pydantic is a powerful data validation library that uses Python type annotations
 - Model Validation
 - Nested Models
 - Serialization
+<<<<<<< HEAD
 - Examples with FastAPI
 
 ## Getting Started
@@ -24,3 +25,6 @@ Pydantic is a powerful data validation library that uses Python type annotations
 ## Contributing
 
 Contributions are welcome! If you have examples or explanations you'd like to add, please submit a pull request.
+=======
+- Examples with fastapi
+>>>>>>> refs/remotes/origin/main
