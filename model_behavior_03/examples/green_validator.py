@@ -1,4 +1,4 @@
-from pydantic import BaseModel, field_validator, model_validator, computed_field
+from pydantic import BaseModel, field_validator, model_validator, computed_field # type: ignore
 
 
 class User(BaseModel):
