@@ -4,3 +4,4 @@
 - Fields Validation
 - Model behavior
 - Nested Model
+- Serialization
